@@ -259,3 +259,50 @@ thegym   dev  …  thegym  git  gym-git-exercise-solutions 
 HEAD is now at 56536b8 setup the home and about page
 thegym   dev  …  thegym  git  gym-git-exercise-solutions 
 ```
+
+## Bundle 2
+
+### Exercise 1
+
+```bash
+
+On branch dev
+nothing to commit, working tree clean
+ thegym   dev  …  thegym  git  gym-git-exercise-solutions  git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+ thegym   ft/bundle-2  …  thegym  git  gym-git-exercise-solutions  git status
+On branch ft/bundle-2
+nothing to commit, working tree clean
+ thegym   ft/bundle-2  …  thegym  git  gym-git-exercise-solutions  touch services.html
+ thegym   ft/bundle-2  …  thegym  git  gym-git-exercise-solutions  git status
+On branch ft/bundle-2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        services.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+ thegym   ft/bundle-2  …  thegym  git  gym-git-exercise-solutions  git add services.html
+ thegym   ft/bundle-2  …  thegym  git  gym-git-exercise-solutions  git commit -m "create service page"
+[ft/bundle-2 abda73d] create service page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 services.html
+ thegym   ft/bundle-2  …  thegym  git  gym-git-exercise-solutions  git push origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 489 bytes | 244.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/Fidesnoella/gym-git-exercise-solutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/Fidesnoella/gym-git-exercise-solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+ thegym   ft/bundle-2  …  thegym  git  gym-git-exercise-solutions  git status
+On branch ft/bundle-2
+nothing to commit, working tree clean
+ thegym   ft/bundle-2  …  thegym  git  gym-git-exercise-solutions 
+
+```
