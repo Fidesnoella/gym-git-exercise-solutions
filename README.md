@@ -1070,3 +1070,92 @@ To https://github.com/Fidesnoella/gym-git-exercise-solutions.git
 On branch ft/squashing
 nothing to commit, working tree clean
 ```
+
+### Bundle 5
+
+## Exercise 1
+
+```bash
+ thegym   main  …  thegym  git  gym-git-exercise-solutions  git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+ thegym   main  …  thegym  git  gym-git-exercise-solutions  git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    home.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ thegym   main  …  thegym  git  gym-git-exercise-solutions  git add .
+ thegym   main  …  thegym  git  gym-git-exercise-solutions  git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    home.html -> index.html
+
+ thegym   main  …  thegym  git  gym-git-exercise-solutions  git commit -m "feat: rename home to index"
+[main 3675933] feat: rename home to index
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename home.html => index.html (100%)
+ thegym   main  …  thegym  git  gym-git-exercise-solutions  git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 241 bytes | 241.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Fidesnoella/gym-git-exercise-solutions.git
+   bc819a9..3675933  main -> main
+ thegym   main  …  thegym  git  gym-git-exercise-solutions 
+```
+
+## Exercise 2
+
+```bash
+ thegym  ~  code  thegym  git  128  git clone https://github.com/Fidesnoella/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (107/107), done.
+remote: Compressing objects: 100% (101/101), done.
+remote: Total 107 (delta 5), reused 104 (delta 4), pack-reused 0
+Receiving objects: 100% (107/107), 1.95 MiB | 1.03 MiB/s, done.
+Resolving deltas: 100% (5/5), done.
+ thegym  ~  code  thegym  git  ls
+git-cafe-exercise  gym-git-exercise-solutions
+ thegym  ~  code  thegym  git  cd git-cafe-exercise
+ thegym   main  …  thegym  git  git-cafe-exercise  git add .
+ thegym   main  …  thegym  git  git-cafe-exercise  git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+ thegym   main  …  thegym  git  git-cafe-exercise  git commit -m "feat: rename the main title"
+[main 5df21b8] feat: rename the main title
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ thegym   main  …  thegym  git  git-cafe-exercise  git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 322 bytes | 322.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Fidesnoella/git-cafe-exercise.git
+   d1d3f9c..5df21b8  main -> main
+ thegym   main  …  thegym  git  git-cafe-exercise 
+```
